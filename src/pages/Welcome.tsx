@@ -8,17 +8,21 @@ import {
     View
 } 
     from 'react-native';
+
+import { useNavigation } from '@react-navigation/core';
 import { Feather } from '@expo/vector-icons';
+
 import wateringImg from '../assets/watering.png';
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
 
 
-export function Welcome(){
-    const [visible, setVisible] = useState(true);
 
-    function handleVisibility(){
-        setVisible(true)
+export function Welcome(){
+    const navigation = useNavigation();
+
+    function handleStart(){
+        navigation.navigate('UserIdentification');
     }
 
     return(
@@ -47,6 +51,7 @@ export function Welcome(){
             <TouchableOpacity 
             style={styles.button} 
             activeOpacity={0.7}
+            onPress={handleStart}
             >
             
                 <Feather 
