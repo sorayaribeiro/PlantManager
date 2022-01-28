@@ -3,7 +3,7 @@ import React from 'react';
 import AppLoading from 'expo-app-loading';
 import Routes from './src/routes';
 
-import fonts from '../styles/fonts';
+import fonts from './src/styles/fonts';
 import {
   useFonts,
   Jost_400Regular, 

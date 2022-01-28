@@ -44,8 +44,9 @@ export function Welcome(){
         
 
             <Text style={styles.subtitle}>
-            Não esqueça mais de regar suas plantas. 
-            Nós cuidamos de lembrar você sempre que precisar.
+            Pode esquecer de regar {'\n'}
+            suas plantas!{'\n'}
+            O Plant Manager lembra você!
             </Text>
 
             <TouchableOpacity 
@@ -62,7 +63,7 @@ export function Welcome(){
             </TouchableOpacity>
 
             {/*<Button  title=">" onPress={handleVisibility} />
-            Se o botão fosse um componente seria chamo assim
+            Se o botão fosse um componente seria chamado assim
             */}
         </View>
     </SafeAreaView>

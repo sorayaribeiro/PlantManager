@@ -61,8 +61,8 @@ export function UserIdentification(){
                                 </Text>
 
                                 <Text style={styles.title}>
-                                    Como podemos {'\n'}
-                                    chamar voce?
+                                    Como quer ser {'\n'}
+                                    chamado?
                                 </Text>
 
                             </View>
